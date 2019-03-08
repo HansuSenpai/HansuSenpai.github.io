@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<legend>ПІБ</legend><input id="pole1" type="text" required ><p>
+	<legend>Дата народження <input type="date"></legend><p>
+	<legend>Адреса<input type="text" id="adr"></legend><p>
+	<legend>Номер телефону<input type="text" id="nomr"></legend><p>	
+	<legend>Cтать</legend>
+	<input type="radio" name="gender" checked>Ж
+	<input type="radio" name="gender" checked>Ч<p>
+	<legend>Фотографія</legend><input type="file"><p>
+	<input type="checkbox" checked>Комерційник
+	<legend>Оцінка з Математики</legend><input id="matem" type="number" value="" required ><p>
+	<legend>Оцінка з Мови</legend><input type="number" id="ukrmov" value="" required ><p>
+	<input type="button" value="Підтвердити" onclick="Otkrit()">
+	<input type="button" value="Закрити" onclick="Zakrit()">
+	<script type="text/javascript">
+		function Otkrit(){
+			Win = window.open("about:blank","exemple",'width=600,height=400,top=20,left=200');
+			var a = document.getElementById("pole1").value;
+            var b = document.getElementById("adr").value;
+            var c = document.getElementById("nomr").value;
+			Win.document.write("Ім`я:"+' '+a+"<br>");
+			Win.document.write("Адреса:"+' '+b+"<br>");
+			Win.document.write("Номер телефону:"+' '+c+"<br>");
+			var k = parseInt(document.getElementById("matem").value)+parseInt(document.getElementById("ukrmov").value);
+			Win.document.write("Сума Оцінок: "+k);
+		}
+		function Zakrit(){
+			Win.close();
+		}
+	</script>
+</body>
+</html>
