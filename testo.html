@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		</script>
+	</head>
+    <body>
+		<form name="pole">
+		<p>1.Назвіть особливість протигазу ПМК-1?</p>
+		<input type="radio" name="vopr1"><label>а.Переговорний апарат;</label>
+		<input type="radio" name="vopr1"><label>б.Трапецивидні стекла;</label>
+		<input type="radio" name="vopr1"><label>в.Фільтр;</label>
+		<input type="radio" name="vopr1"><label>г.Клапан видоху;</label>
+		<p>2. Що таке ФПК?</p>
+		<input type="radio" name="vopr2"><label>а.Фільтрувально поїдаюча коробка;</label>
+		<input type="radio" name="vopr2"><label>б.Фрезерувально перемикаюча коробка;</label>
+		<input type="radio" name="vopr2"><label>в.Фільтрувально поглинаюча коробка;</label>
+		<input type="radio" name="vopr2"><label>г.Фарфорово пластикова коробка;</label>
+		<p>3. В які роки вироблявся протигаз ЦП-5?</p>
+		<input type="radio" name="vopr3"><label>а.1961-1989;</label>
+		<input type="radio" name="vopr3"><label>б.1945-1957;</label>
+		<input type="radio" name="vopr3"><label>в.1960-1985;</label>
+		<input type="radio" name="vopr3"><label>г.1961-2005;</label>
+		<p>4. Назва маски протигазу ПМК-1.</p>
+		<input type="radio" name="vopr4"><label>а.МПК-1;</label>
+		<input type="radio" name="vopr4"><label>б.М-10;</label>
+		<input type="radio" name="vopr4"><label>в.М-80;</label>
+		<input type="radio" name="vopr4"><label>г.МП-5У;</label>
+		<p>5. Яка стандартна різьбі для радянських та деяких НАТОвських протигазів?</p>
+		<input type="radio" name="vopr5"><label>а.10мм;</label>
+		<input type="radio" name="vopr5"><label>б.50мм;</label>
+		<input type="radio" name="vopr5"><label>в.45мм;</label>
+		<input type="radio" name="vopr5"><label>г.40мм;</label>
+		<p>6. В армії якї країни протигаз GSR використовується як основний?.</p>
+		<input type="radio" name="vopr6"><label>a.Великої Британії;</label>
+		<input type="radio" name="vopr6"><label>б.Китаю;</label>
+		<input type="radio" name="vopr6"><label>в.США;</label>
+		<input type="radio" name="vopr6"><label>г.Бельгії;</label>
+		<input type="button" value="Прийняти" id="knopka" onclick="otvet()">
+		</form>
+		<script type="text/javascript">
+		function otvet(){
+				 var b = 0;
+				if (document.pole.vopr1[1].checked) b++;
+				if (document.pole.vopr2[2].checked) b++;
+ 				if (document.pole.vopr3[0].checked) b++;
+				if (document.pole.vopr4[2].checked) b++;
+                if (document.pole.vopr5[3].checked) b++;
+                if (document.pole.vopr6[0].checked) b++;	
+                alert("Ваша оцінка"+' '+b);								
+		                 }
+		</script>
+    </body>
+</html>
